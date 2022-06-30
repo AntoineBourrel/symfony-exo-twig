@@ -22,17 +22,17 @@ class HomeController extends AbstractController
     }
 
     /**
-     * @Route ("/article", name="article")
+     * @Route ("/category", name="category")
      */
 
-    public function article(){
+    public function category(){
         $category = [
             'title' => 'Politique',
             'color' => 'red',
             'published' => true,
             'description' => "Decrypter l'actualité politique avec le prisme de David Robert"
         ];
-        return $this->render('article.html.twig', [
+        return $this->render('category.html.twig', [
             'category' => $category
         ]);
     }

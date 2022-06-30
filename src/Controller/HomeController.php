@@ -21,11 +21,13 @@ class HomeController extends AbstractController
         ]);
     }
 
+    // Route vers la page des catégories
     /**
      * @Route ("/category", name="category")
      */
-
+    // Méthode d'affichage des categories
     public function category(){
+        // Tableau des catégories
         $category = [
             'title' => 'Politique',
             'color' => 'red',

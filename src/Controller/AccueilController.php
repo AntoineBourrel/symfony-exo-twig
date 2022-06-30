@@ -13,6 +13,9 @@ class AccueilController extends AbstractController
      */
 
     public function accueil(){
-        return new Response('Bonjour');
+        $name = 'Antoine';
+        return $this->render('accueil.html.twig', [
+            'name' => $name
+        ]);
     }
 }

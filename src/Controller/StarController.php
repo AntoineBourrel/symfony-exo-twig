@@ -8,10 +8,11 @@ use Symfony\Component\Routing\Annotation\Route;
 
 class StarController extends AbstractController
 {
+    // création de laroute vars la page "stars"
     /**
      * @Route ("/stars", name="stars")
      */
-
+    // Méthode "stars"
     public function stars(){
         $categories = [
             1 => [
@@ -51,6 +52,7 @@ class StarController extends AbstractController
             ]
         ];
 
+        // Appel de la page twig 'star' quand la route est appelé
         return $this->render('star.html.twig', [
             'categories' => $categories
         ]);

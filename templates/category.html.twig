@@ -8,10 +8,11 @@
     <title>Document</title>
 </head>
 <body>
-    {% if category.published %}
-        <article style="background-color: {{ category.color }}">
-            <h2>{{ category.title }}</h2>
-            <p>{{ category.description }}</p>
+    {% if categories.published %}
+        <article style="background-color: {{ categories.color }}">
+            <h2>{{ categories.title }}</h2>
+            <img src="{{ categories.image }}" alt="image">
+            <p>Publié le : {{ categories.publishedDate|date("d/m/Y") }}</p>
         </article>
     {% else %}
         <p>L'article n'est pas encore publié</p>

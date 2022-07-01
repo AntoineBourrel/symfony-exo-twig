@@ -14,7 +14,7 @@ class StarController extends AbstractController
      */
     // Méthode "stars"
     public function stars(){
-        $categories = [
+        $stars = [
             1 => [
                 'title' => 'Tex',
                 'color' => 'red',
@@ -54,7 +54,7 @@ class StarController extends AbstractController
 
         // Appel de la page twig 'star' quand la route est appelé
         return $this->render('star.html.twig', [
-            'categories' => $categories
+            'stars' => $stars
         ]);
     }
 }

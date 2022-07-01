@@ -9,10 +9,10 @@ use Symfony\Component\Routing\Annotation\Route;
 class StarController extends AbstractController
 {
     /**
-     * @Route ("/star", name="star")
+     * @Route ("/stars", name="stars")
      */
 
-    public function star(){
+    public function stars(){
         $categories = [
             1 => [
                 'title' => 'Tex',

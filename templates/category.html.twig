@@ -1,21 +1,11 @@
-<!doctype html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-</head>
+{% include '_header.html.twig' %}
+
 <body>
-    {% if categories.published %}
-        <article style="background-color: {{ categories.color }}">
-            <h2>{{ categories.title }}</h2>
-            <img src="{{ categories.image }}" alt="image">
-            <p>Publié le : {{ categories.publishedDate|date("d/m/Y") }}</p>
-        </article>
+    {% if star.published %}
+        {% include '_article.html.twig' %}
     {% else %}
         <p>L'article n'est pas encore publié</p>
     {% endif %}
 </body>
-</html>
+
+{% include '_footer.html.twig' %}

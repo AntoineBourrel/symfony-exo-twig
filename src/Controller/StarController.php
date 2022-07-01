@@ -31,7 +31,7 @@ class StarController extends AbstractController
             ],
             3 => [
                 'title' => 'Afida Turner',
-                'color' => 'black',
+                'color' => 'violet',
                 'published' => true,
                 'image' => 'https://s.yimg.com/uu/api/res/1.2/SXrg2uonJIrD9JlemslJWQ--~B/aD01Njg7dz0xMDI0O2FwcGlkPXl0YWNoeW9u/http://media.zenfs.com/fr_FR/News/TeleLoisirs/96851-afida-turner-atteinte-de-deux-tumeurs-elle-sera-bientot-hospitalisee.jpeg',
                 'publishedDate' => new \DateTime('NOW')

@@ -28,7 +28,7 @@ class HomeController extends AbstractController
     // Méthode d'affichage des categories
     public function category($id){
         // Tableau des catégories
-        $categories = [
+        $stars = [
             1 => [
                 'title' => 'Tex',
                 'color' => 'red',
@@ -66,7 +66,7 @@ class HomeController extends AbstractController
             ]
         ];
         return $this->render('category.html.twig', [
-            'categories' => $categories[$id]
+            'star' => $stars[$id]
         ]);
     }
 }

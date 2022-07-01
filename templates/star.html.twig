@@ -3,7 +3,7 @@
 <body>
     {% for star in stars %}
         {% if star.published %}
-            {% include '_article.html.twig' %}
+            <a href="{{ path('category', {'id' : star.id }) }}">{% include '_article.html.twig' %}</a>
         {% else %}
             <p>Cette catégorie n'est pas encore publiée</p>
         {% endif %}

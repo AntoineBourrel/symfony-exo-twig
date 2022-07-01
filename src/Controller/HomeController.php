@@ -21,7 +21,7 @@ class HomeController extends AbstractController
         ]);
     }
 
-    // Route vers la page des catégories
+    // Route vers la page des catégories avec wildcard
     /**
      * @Route ("/category/{id}", name="category")
      */

@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    {% for category in categories %}
+        {% if category.published %}
+            <article style="background-color: {{ category.color }}">
+                <h2>{{ category.title }}</h2>
+                <img src="{{ category.image }}" alt="image">
+                <p>publié le : {{ category.publishedDate|date("d/m/Y") }}</p>
+            </article>
+        {% else %}
+            <p>Cette catégorie n'est pas encore publiée</p>
+        {% endif %}
+    {% endfor %}
+</body>
+</html>
